@@ -1,2 +1,5 @@
+# Don't include the data file. It will be recreated anyway
+mockapi.dat
+
 # Miscellaneous files
 .DS_Store
