@@ -1,0 +1,10 @@
+# API redirect to single point of entry
+# if the request is not to a valid file or location,
+# redirect the request to index.php
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
+</IfModule>
+# END
